@@ -6,7 +6,7 @@ import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "users", component: UsersComponent },
+  { path: "users", loadChildren: "./users/users.module#UsersModule" },
   { path: "posts", component: PostsComponent }
 ];
 

@@ -17,7 +17,6 @@ import { isPlatformBrowser } from "@angular/common";
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    UsersComponent,
     PostsComponent,
     HomeComponent
   ],
