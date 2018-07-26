@@ -6,23 +6,25 @@ import { AppComponent } from "./app.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { HeaderComponent } from "./header/header.component";
 import { UsersComponent } from "./users/users.component";
-import { PostsComponent } from "./posts/posts.component";
+//import { PostsComponent } from "./posts/posts.component";
 import { HomeComponent } from "./home/home.component";
 
 import { PLATFORM_ID, APP_ID, Inject } from "@angular/core";
 import { isPlatformBrowser } from "@angular/common";
+import { PostsModule } from "./posts/posts.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HeaderComponent,
-    PostsComponent,
+    // PostsComponent,
     HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "static-site" }),
-    AppRoutingModule
+    AppRoutingModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
